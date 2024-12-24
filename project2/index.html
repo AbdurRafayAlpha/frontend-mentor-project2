@@ -1,0 +1,195 @@
+<!-- PRIMARY
+- Orange: hsl(25, 97%, 53%) -->
+
+
+<!-- - Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <title>Rate Our Services | Code With Rafay</title>
+
+    <style>
+        body {
+            background-color: hsl(216, 12%, 8%);
+        }
+
+        #main-container {
+            background-color: hsl(213, 19%, 18%);
+            width: 29vw;
+            height: 53vh;
+
+            margin: auto;
+            margin-top: 27vh;
+
+            border-radius: 25px;
+        }
+
+        #star-icon-container {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+            margin-top: 32px;
+            margin-left: 25px;
+            /* border: 2px solid whitesmoke; */
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            background-color: hsl(211, 19%, 24%);
+        }
+
+
+        /* Text styling  */
+        #text1 {
+            font-weight: 700;
+            font-size: x-large;
+            color: whitesmoke;
+
+            font-family: "Overpass", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+
+
+
+            margin-top: 39px;
+            margin-left: 25px;
+        }
+
+        #text2 {
+            color: rgb(139, 139, 139);
+
+            font-family: "Overpass", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+            margin-top: 5px;
+            margin-left: 25px;
+        }
+
+
+        /* Buttons styling */
+        #rate-buttons {
+            /* border: 1px solid white; */
+
+            display: inline-flex;
+            justify-content: space-between;
+            gap: 35px;
+            align-items: center;
+
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #454e57;
+            border: none;
+
+            color: rgb(189, 189, 189);
+        }
+
+
+        .button:hover {
+            background-color: hsl(25, 97%, 53%);
+            color: black;
+            cursor: pointer;
+        }
+
+        .button:focus {
+            background-color: white;
+            color: black;
+        }
+
+
+        /* Submit Button Styling  */
+        .submit {
+            background-color: hsl(25, 97%, 53%);
+            color: black;
+
+            width: 25vw;
+            height: 40px;
+
+            border-radius: 30px;
+
+            margin-left: 25px;
+            margin-top: 20px;
+
+            border: none;
+
+            font-family: "Roboto", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .submit:focus{
+            background-color: whitesmoke;
+            color: black;
+            cursor: pointer;
+        }
+
+        .submit:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <!-- ICON -->
+        <div id="star-icon-container">
+            <svg id="star-icon" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                    fill="#FC7614" />
+            </svg>
+        </div>
+
+        <!-- Text Handling -->
+        <div id="text1">How did we do?</div>
+        <div id="text2">Please let us know how we did with your report request. All feedback is appreciated to help us
+            improve our offering!</div>
+
+
+        <!-- Rating Buttons -->
+        <div id="rate-buttons">
+            <input type="button" value="1" class="button">
+            <input type="button" value="2" class="button">
+            <input type="button" value="3" class="button">
+            <input type="button" value="4" class="button">
+            <input type="button" value="5" class="button">
+        </div>
+
+
+        <!-- Submit Button -->
+        <input type="button" value="SUBMIT" class="submit">
+    </div>
+</body>
+
+</html>
